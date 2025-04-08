@@ -1,0 +1,39 @@
+.masonry-container {
+  column-count: 5;
+  gap: 16px;
+  padding: 16px;
+}
+
+.masonry-layout-item {
+  display: inline-block;
+}
+
+@media screen and (max-width: 1600px) {
+  .masonry-container {
+    column-count: 5;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .masonry-container {
+    column-count: 4;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .masonry-container {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .masonry-container {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .masonry-container {
+    column-count: 1;
+  }
+}

@@ -1,5 +1,5 @@
 export const ENVIRONMENT = {
   production: false,
-  apiUrl: 'http://localhost:8000',
+  apiUrl: 'http://localhost:8080',
   envName: 'staging',
 };

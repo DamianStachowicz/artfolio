@@ -24,6 +24,61 @@ impl AppState {
         "3",
         "http://127.0.0.1:8080/image/pianka.png",
         "A serene beach"
+      ),
+      Image::new(
+        "2",
+        "http://127.0.0.1:8080/image/Spooky_cat.png",
+        "A mountain view"
+      ),
+      Image::new(
+        "3",
+        "http://127.0.0.1:8080/image/pianka.png",
+        "A serene beach"
+      ),
+      Image::new(
+        "1",
+        "http://127.0.0.1:8080/image/czarodziejka-jasność-20+kontrast-30.jpg",
+        "A beautiful sunset"
+      ),
+      Image::new(
+        "2",
+        "http://127.0.0.1:8080/image/Spooky_cat.png",
+        "A mountain view"
+      ),
+      Image::new(
+        "3",
+        "http://127.0.0.1:8080/image/pianka.png",
+        "A serene beach"
+      ),
+      Image::new(
+        "1",
+        "http://127.0.0.1:8080/image/czarodziejka-jasność-20+kontrast-30.jpg",
+        "A beautiful sunset"
+      ),
+      Image::new(
+        "2",
+        "http://127.0.0.1:8080/image/Spooky_cat.png",
+        "A mountain view"
+      ),
+      Image::new(
+        "3",
+        "http://127.0.0.1:8080/image/pianka.png",
+        "A serene beach"
+      ),
+      Image::new(
+        "1",
+        "http://127.0.0.1:8080/image/czarodziejka-jasność-20+kontrast-30.jpg",
+        "A beautiful sunset"
+      ),
+      Image::new(
+        "2",
+        "http://127.0.0.1:8080/image/Spooky_cat.png",
+        "A mountain view"
+      ),
+      Image::new(
+        "3",
+        "http://127.0.0.1:8080/image/pianka.png",
+        "A serene beach"
       )
     ];
 

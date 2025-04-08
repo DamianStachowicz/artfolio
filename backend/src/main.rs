@@ -1,4 +1,5 @@
 use actix_web::{ web, App, HttpServer, middleware };
+use actix_cors::Cors; // Import Cors
 
 mod models;
 mod handlers;
@@ -14,7 +15,13 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
   let app_state = AppState::new();
 
   HttpServer::new(move || {
+    let cors = Cors::default()
+      .allow_any_origin() // Allow requests from any origin
+      .allow_any_method() // Allow any HTTP method
+      .allow_any_header(); // Allow any header
+
     App::new()
+      .wrap(cors) // Apply CORS middleware
       .wrap(middleware::NormalizePath::new(middleware::TrailingSlash::Trim)) // Normalize paths
       .app_data(web::Data::new(app_state.clone())) // Share state
       .route("/images/{page}/{per_page}", web::get().to(get_images)) // Route for fetching paginated images

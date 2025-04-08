@@ -1,0 +1,11 @@
+<div class="masonry-container" (scroll)="onScroll($event)">
+  @for (item of items; track $index) {
+  <div class="masonry-layout-item">
+    <ng-container
+      [ngTemplateOutlet]="masonryItem"
+      [ngTemplateOutletContext]="{ $implicit: item }"
+    >
+    </ng-container>
+  </div>
+  }
+</div>
